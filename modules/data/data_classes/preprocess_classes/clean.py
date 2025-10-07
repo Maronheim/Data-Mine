@@ -11,5 +11,5 @@ class clean:
     def drop_na(self):
         print("Checking for N/A's")
 
-    def normalize():
+    def normalize(self):
         print("Normalizing Data & Column Names")

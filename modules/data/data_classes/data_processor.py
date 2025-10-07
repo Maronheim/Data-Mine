@@ -14,14 +14,12 @@ class preprocessor:
             print("Duplicates Dropped")
             cln = clean.drop_na(cln)
             print("N/A's Dropped")
+            cln = clean.normalize(cln)
+            print("Data Normalized")
 
             self.cleaned_data[name] = cln
             print("Data Cleaned.")
+
+
         return self.cleaned_data
     
-    def normalize(self):
-        for name, cln in self.cleaned_data.items():
-            numeric_cols = cln.select_dtypes(include=np.number).columns
-            cln[numeric_cols] = (cln[numeric_cols] - cln[numeric_cols].mean()) / cln[numeric_cols].std()
-        print("Data normalized.")
-        return self.cleaned_data
