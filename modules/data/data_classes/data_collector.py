@@ -7,9 +7,7 @@ class data_collector:
         self.raw_data = {}
 
     def fetch_data(self):
-        """Loads datasets from given sources."""
         for name, path in self.data_files.items():
             current_dir = os.getcwd()
-            print(f"Loading {name} data from {path}...")
             self.raw_data[name] = panda.read_csv(path)
         return self.raw_data

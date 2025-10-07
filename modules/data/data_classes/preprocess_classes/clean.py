@@ -6,10 +6,10 @@ class clean:
         self.cleaned_data = {}
 
     def drop_duplicates(self):
-        print("Checking for Duplicates")
+        drops = self
 
     def drop_na(self):
-        print("Checking for N/A's")
+        drops = self
 
     def normalize(self):
-        print("Normalizing Data & Column Names")
+        drops = self
