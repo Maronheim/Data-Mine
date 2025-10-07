@@ -1,10 +1,10 @@
 from modules.pipeline.pipeline_controller import pipeline
 
-if __name__ == "main":
+if __name__ == "__main__":
     config = {
-        'data_sources': {
-            'jobs': 'data/jobs.csv',
-            'stocks': 'data/market_data.csv'
+        'data_files': {
+            'jobs': 'modules/data/data_files/jobs.csv',
+            'stocks': 'modules/data/data_files/market_data.csv'
         }
     }
 

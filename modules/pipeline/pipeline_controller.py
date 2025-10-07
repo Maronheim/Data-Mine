@@ -5,8 +5,5 @@ class pipeline:
         self.config = config
 
     def run(self):
-        print("Starting Pipeline")
-
         collector = data_collector(self.config['data_files'])
         pre_data = collector.fetch_data()
-        print("Data Collected")
