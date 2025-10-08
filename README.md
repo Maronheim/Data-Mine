@@ -6,8 +6,12 @@ A 4-person data mining project to uncover employment data and trends through nov
         Python:
             Command: "brew install python"
 
+            Reinstall Python:
+                Command: "brew reinstall python@3.13"
+
         Pip:
             Command: "pip3 install pandas numpy scikit-learn"
+                     "brew install pipx"
 
             Reinstall Pip:
                 Command: "pip3 uninstall -y numpy pandas"
