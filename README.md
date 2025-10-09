@@ -10,7 +10,7 @@ A 4-person data mining project to uncover employment data and trends through nov
                 Command: "brew reinstall python@3.13"
 
         Pip:
-            Command: "pip3 install pandas numpy scikit-learn"
+            Command: "pip3 install pandas numpy scikit-learn supabase python-dotenv"
                      "brew install pipx"
 
             Reinstall Pip:
