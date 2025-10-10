@@ -4,7 +4,7 @@ A 4-person data mining project to uncover employment data and trends through nov
 # Updated Program Run Instructions with Virtual Enviornment
     
     Mac/Linux:
-        Install & Activate Virtual Enviornment:
+        Install & Activate Virtual Environment:
             python3 -m venv venv
 
             source venv/bin/activate
@@ -16,7 +16,7 @@ A 4-person data mining project to uncover employment data and trends through nov
             python3 main.py
 
     Windows:
-        Install & Activate Virtual Enviornment:
+        Install & Activate Virtual Environment:
             python3 -m venv venv
             
             venv\Scripts\activate
@@ -24,10 +24,8 @@ A 4-person data mining project to uncover employment data and trends through nov
         Install dependencies:
             pip install -r requirements.txt
 
-        Execture Program:
+        Execute Program:
             python3 main.py
-
-
 
 
 
