@@ -7,10 +7,18 @@ class preprocessor:
     def __init__(self, data: dict):
         self.data = data
         self.cleaned_data = {}
+        
+        con = s.connect("modules/data/data_files/sqlite3_test.db")
+        print("CONNECTED TO SQLITE3")
+        cur = con.cursor()
+        cur.execute("CREATE TABLE movie1(title, year, score)")
+
+        res = cur.execute("SELECT name FROM sqlite_master")
+        res.fetchone()
+
+        print('RESULT: ', res.fetchone())
 
     def cleaner(self):
-        con = s.connect("tutorial.db")
-
         for name, cln in self.data.items():
             cln = clean.drop_duplicates(cln)
             cln = clean.drop_na(cln)
