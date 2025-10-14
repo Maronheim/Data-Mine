@@ -11,9 +11,8 @@ class preprocessor:
         con = s.connect("modules/data/data_files/sqlite3_test.db")
         print("CONNECTED TO SQLITE3")
         cur = con.cursor()
-        cur.execute("CREATE TABLE movie1(title, year, score)")
 
-        res = cur.execute("SELECT name FROM sqlite_master")
+        res = cur.execute("SELECT * FROM sqlite_master")
         res.fetchone()
 
         print('RESULT: ', res.fetchone())
