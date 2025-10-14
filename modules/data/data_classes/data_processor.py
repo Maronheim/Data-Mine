@@ -1,4 +1,6 @@
 import numpy as n
+import sqlite3 as s
+
 from modules.data.data_classes.preprocess_classes.clean import clean
 
 class preprocessor:
@@ -7,6 +9,8 @@ class preprocessor:
         self.cleaned_data = {}
 
     def cleaner(self):
+        con = s.connect("tutorial.db")
+
         for name, cln in self.data.items():
             cln = clean.drop_duplicates(cln)
             cln = clean.drop_na(cln)
